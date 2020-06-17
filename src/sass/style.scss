@@ -14,13 +14,18 @@
 @import 'blocks/advantages';
 @import 'blocks/consultation';
 @import 'blocks/carousel';
+@import 'blocks/catalog';
+@import 'blocks/rewiews';
+@import 'blocks/footer';
 
 
 .container {
+    position: relative;
     max-width: 950px;
     margin: 0 auto;
 }
 
 a:hover {
     text-decoration: none;
+    color: $main_color;
 }

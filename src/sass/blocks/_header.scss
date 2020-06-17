@@ -29,9 +29,12 @@
         font-size: 18px;
         font-weight: 700;
         display: block;
+        opacity: 0.8;
+        transition: 0.3s;
         &:hover {
             color: #ffffff;
             text-decoration: none;
+            opacity: 1;
         }
     }
     &__contacts {
