@@ -53,6 +53,74 @@ $(document).ready(function(){
 			$('.overlay, #order').fadeIn();
 		});
 	});
+
+	$('#consultation button').on('click', function() {
+		$('#consultation').fadeOut();
+		$('#thanks').fadeIn()
+	})
+	$('#order button').on('click', function() {
+		$('#order').fadeOut();
+		$('#thanks').fadeIn()
+	})
+	// forms
+
+	$('.feed-form').validate({
+		rules: {
+			name: "required",
+			phone: "required",
+			email: {
+				required: true,
+				email: true
+			}
+		},
+
+		messages: {
+			name: "Пожалуйста, введите свое имя",
+			phone: "Пожалуйста, введите свой номер телефона",
+			email: {
+				required: "Пожалуйста, введите свою почту",
+				email: "Неправильно введен почтовый адрес"
+			}
+		}
+	});
+	$('#consultation form').validate({
+		rules: {
+			name: "required",
+			phone: "required",
+			email: {
+				required: true,
+				email: true
+			}
+		},
+
+		messages: {
+			name: "Пожалуйста, введите свое имя",
+			phone: "Пожалуйста, введите свой номер телефона",
+			email: {
+				required: "Пожалуйста, введите свою почту",
+				email: "Неправильно введен почтовый адрес"
+			}
+		}
+	});
+	$('#order form').validate({
+		rules: {
+			name: "required",
+			phone: "required",
+			email: {
+				required: true,
+				email: true
+			}
+		},
+
+		messages: {
+			name: "Пожалуйста, введите свое имя",
+			phone: "Пожалуйста, введите свой номер телефона",
+			email: {
+				required: "Пожалуйста, введите свою почту",
+				email: "Неправильно введен почтовый адрес"
+			}
+		}
+	});
 });
 
   
