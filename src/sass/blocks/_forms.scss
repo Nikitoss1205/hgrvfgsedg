@@ -13,8 +13,17 @@
         padding: 0 20px;
         margin-bottom: 10px;
         border: none;
-        :last-child {
+        &:last-child {
             margin-bottom: 0;
+        }
+    }
+    &_modal-consultation {
+        margin-top: 25px;
+        input {
+            margin-bottom: 15px;
+            &:last-child {
+                margin-bottom: 20px;
+            }
         }
     }
 }
