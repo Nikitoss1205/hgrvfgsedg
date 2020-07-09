@@ -13,6 +13,9 @@
             display: block;
             margin: 0 auto;
         }
+        .animate__heartBeat {
+            animation-iteration-count: infinite;
+        }
     }
     &__title {
         margin-top: 35px;
@@ -31,6 +34,18 @@
             color: #ff0000;
             text-decoration: underline;
             text-transform: uppercase;
+        }
+    }
+    &__icon {
+        &_animated {
+            animation-name: heartbeat;
+            animation-duration: 1.7s;
+            animation-timing-function: cubic-bezier();
+            animation-iteration-count: infinite;
+            animation-play-state: paused;
+            &:hover {
+                animation-play-state: running;
+            }
         }
     }
 }

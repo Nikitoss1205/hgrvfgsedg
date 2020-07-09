@@ -18,6 +18,9 @@
             margin-bottom: 0;
         }
     }
+    .error {
+        font-size: 14px;
+    }
     &_modal-consultation {
         margin-top: 25px;
         input {
@@ -28,3 +31,8 @@
         }
     }
 }
+
+#consultation-form 
+    .error {
+        color: #fff;
+    }
